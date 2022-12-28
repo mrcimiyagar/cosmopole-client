@@ -1,0 +1,23 @@
+.dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+}
+
+.vertical-line {
+    border-left: thick solid #990000;
+    height: 90%;
+    color: red;
+    background: red;
+    position: relative;
+    z-index: 999;
+}
+
+.line-container {
+    height: 90%;
+    background: red;
+    position: absolute;
+    z-index: 9999;
+}

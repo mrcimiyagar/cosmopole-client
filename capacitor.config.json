@@ -1,0 +1,13 @@
+{
+    "appId": "kasperian.city.mobile",
+    "appName": "City",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {},
+    "plugins": {
+      "SplashScreen": {
+        "launchShowDuration": 0
+      }
+    }
+  }

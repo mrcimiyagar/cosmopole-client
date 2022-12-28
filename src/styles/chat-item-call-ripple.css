@@ -1,0 +1,36 @@
+.ripple {
+    margin: auto;
+    background-color: #268bd2;
+    border-radius: 50%;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    animation: ripple 3s linear infinite
+}
+
+.ripple::before,
+.ripple::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    animation: ripple 3s linear infinite 1s
+}
+
+.ripple::after {
+    animation: ripple 3s linear infinite 2s
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 .7rem rgba(40, 40, 40, 0.5)
+    }
+
+    100% {
+        box-shadow: 0 0 0 5rem rgba(255, 255, 255, 0)
+    }
+}
